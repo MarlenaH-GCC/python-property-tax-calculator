@@ -28,7 +28,7 @@ class Property_TaxGUI:
     def calculate(self):
         value = float(self.value_entry.get())
         assessment_value = value * 0.6
-        property_tax = assessment_value * 0.0075
+        property_tax = assessment_value * 0.016
         tkinter.messagebox.showinfo('Result', f'Assessment Value: ${assessment_value:.2f}\nProperty Tax: ${property_tax:.2f}')
 
 if __name__ == '__main__':
